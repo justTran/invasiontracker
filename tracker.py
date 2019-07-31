@@ -20,6 +20,9 @@ while True:
       shard = line.get("invasion_district")
       progress = line.get("invasion_progress")
       remainder = line.get("invasion_remaining")
+      if cog == "Mover &amp; Shaker":
+        cog = "Mover & Shaker"
+        
       print ('{:<17} {:<9} {:<14} {:<10} {:}'.format(cog, cogtype, shard, progress, remainder))
 
     time.sleep(9.5)
