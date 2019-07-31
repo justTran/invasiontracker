@@ -1,5 +1,13 @@
 import json, urllib, urllib2, os, time, string
 
+'''
+This function runs in an infinite loop. It uses the 
+try / except clause as a error handling measure. It makes a 
+request to the API to return some json data. The data is 
+then sorted by the Cog name key and printed to the terminal. 
+The process repeats after 9.5 seconds due to API limitations.
+'''
+
 while True:
   try:
     page = urllib2.urlopen('http://api.ttr-invasions.com/json/invasionlist/')
